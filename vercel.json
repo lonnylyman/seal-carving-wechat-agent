@@ -4,20 +4,5 @@
   "outputDirectory": "dist",
   "env": {
     "NODE_ENV": "production"
-  },
-  "functions": {
-    "src/index.ts": {
-      "runtime": "nodejs18.x"
-    }
-  },
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "/src/index.ts"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/src/index.ts"
-    }
-  ]
+  }
 }
